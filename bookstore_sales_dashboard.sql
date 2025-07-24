@@ -3,14 +3,15 @@ USE `bookstore_sales_dashboard`;
 
 CREATE TABLE sales_data (
     id INTEGER PRIMARY KEY,
-    customer_name TEXT,
-    book_title TEXT,
-    genre TEXT,
-    price REAL,
+    customer_name VARCHAR(50),
+    book_title VARCHAR(50),
+    genre VARCHAR(50),
+    price DECIMAL,
     quantity INTEGER,
-    country TEXT,
-    order_date TEXT
+    country VARCHAR(50),
+    order_date DATE
 );
+
 
 INSERT INTO sales_data (id, customer_name, book_title, genre, price, quantity, country, order_date) VALUES
 (1, 'Alice Smith', 'Atomic Habits', 'Self-help', 18.00, 1, 'USA', '2024-01-15'),
