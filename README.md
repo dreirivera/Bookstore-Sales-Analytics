@@ -23,12 +23,14 @@ A beginner SQL project where I analyzed fictional bookstore sales data using rea
 - **Table:** `sales_data`
 
 The dataset contains fictional records of book purchases with the following columns:
-- `book_title` (VARCHAR)
-- `genre` (VARCHAR)
-- `price` (DECIMAL)
-- `quantity` (INT)
-- `country` (VARCHAR)
-- `customer_name` (VARCHAR)
+- `id` INTEGER PRIMARY KEY
+- `customer_name` VARCHAR(50)
+- `book_title` VARCHAR(50)
+- `genre` VARCHAR(50)
+- `price` DECIMAL
+- `quantity` INTEGER
+- `country` VARCHAR(50)
+- `order_date` DATE
 
 ---
 
